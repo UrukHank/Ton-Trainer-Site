@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ton Trainer – Planilhas de Corrida Profissionais</title>
+    <meta name="description"
+        content="Planilhas de corrida para todas as distâncias: 5K, 10K, 15K e 21K. Treinos progressivos com controle de pace e calendário. Acesse por apenas R$19,99 cada ou pacote completo." />
+    <meta property="og:title" content="Ton Trainer – Planilhas de Corrida 5K a 21K" />
+    <meta property="og:description"
+        content="Treinos profissionais para todas as distâncias, com planos semanais e controle de pace. Preços especiais para pacotes." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+        }
+
+        :root {
+            color-scheme: dark;
+        }
+
+        .card {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 30px rgba(0, 0, 0, .35);
+        }
+
+        .ring-focus:focus-visible {
+            outline: 2px solid rgb(168 85 247);
+            outline-offset: 2px;
+        }
+
+        .grid-table {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+        }
+
+        .bg-purple-gradient {
+            background: linear-gradient(135deg, rgba(126, 34, 206, 0.2) 0%, rgba(168, 85, 247, 0.1) 50%, rgba(107, 33, 168, 0.2) 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Header -->
+    <header
+        class="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/80 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60">
+        <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+            <a href="#home" class="flex items-center gap-3">
+                <span></span>
+                <img src="Ton.png" alt="Ton Trainer" class="w-10 h-10 rounded-full">
+                <span class="text-sm font-bold tracking-tight">Ton Trainer</span>
+            </a>
+            <nav class="hidden items-center gap-6 md:flex">
+                <a href="#recursos" class="text-sm text-slate-400 hover:text-slate-100">Recursos</a>
+                <a href="#distancias" class="text-sm text-slate-400 hover:text-slate-100">Distâncias</a>
+                <a href="#como" class="text-sm text-slate-400 hover:text-slate-100">Como funciona</a>
+                <a href="#preco" class="text-sm text-slate-400 hover:text-slate-100">Preço</a>
+                <a href="#faq" class="text-sm text-slate-400 hover:text-slate-100">FAQ</a>
+            </nav>
+            <a href="#preco"
+                class="ring-focus inline-flex items-center justify-center rounded-2xl bg-purple-600 px-4 py-2 text-sm font-semibold text-slate-100 hover:bg-purple-500">Comprar
+                agora</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative overflow-hidden pt-12 sm:pt-20">
+        <div
+            class="pointer-events-none absolute -top-40 left-1/2 -z-10 h-[38rem] w-[38rem] -translate-x-1/2 rounded-full bg-purple-gradient blur-3xl">
+        </div>
+        <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+            <div>
+                <span
+                    class="inline-flex items-center gap-1 rounded-full border border-slate-800 bg-slate-900/60 px-3 py-1 text-xs font-medium text-slate-300">🏃‍♂️
+                    Planilhas de Corrida Profissionais</span>
+                <h1 class="mt-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
+                    Treinos <span class="text-purple-400">personalizados</span> para todas as distâncias
+                </h1>
+                <p class="mt-4 text-base text-slate-300">
+                    As <strong>Planilhas de corrida da Ton Trainer</strong> guiam você desde os 5K até a meia maratona
+                    (21K) com treinos semanais progressivos: volume, ritmos (pace), dias de descanso e treinos
+                    específicos. Tudo pronto para imprimir ou usar no Google Sheets/Excel.
+                </p>
+                <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+                    <a href="#preco"
+                        class="ring-focus inline-flex items-center justify-center rounded-2xl bg-purple-600 px-6 py-3 text-sm font-semibold text-slate-100 hover:bg-purple-500">Quero
+                        começar agora</a>
+                    <a href="#distancias"
+                        class="ring-focus inline-flex items-center justify-center rounded-2xl border border-slate-800 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-slate-100 hover:bg-slate-900">Ver
+                        distâncias</a>
+                </div>
+                <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-slate-400">
+                    <div>⭐ Garantia 7 dias</div>
+                    <div>⚡ Acesso imediato</div>
+                    <div>✅ Atualizações grátis</div>
+                </div>
+            </div>
+            <div>
+                <div class="card rounded-3xl border border-slate-800 bg-slate-900">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold">Prévia das Planilhas</h3>
+                        <p class="mt-1 text-sm text-slate-400">Exemplo de progressão em diferentes distâncias.</p>
+                    </div>
+                    <div class="m-6 overflow-hidden rounded-2xl border border-slate-800">
+                        <div class="grid-table text-xs">
+                            <div class="col-span-3 bg-slate-800/60 p-2 font-medium">Distância</div>
+                            <div class="col-span-3 bg-slate-800/60 p-2 font-medium">Semanas</div>
+                            <div class="col-span-3 bg-slate-800/60 p-2 font-medium">Volume máximo</div>
+                            <div class="col-span-3 bg-slate-800/60 p-2 font-medium">Treino-chave</div>
+
+                            <div class="col-span-3 border-t border-slate-800 p-2">5K</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">8</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">20 km/sem</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">Intervalados</div>
+
+                            <div class="col-span-3 border-t border-slate-800 p-2">10K</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">10</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">35 km/sem</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">Ritmo alvo</div>
+
+                            <div class="col-span-3 border-t border-slate-800 p-2">15K</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">12</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">45 km/sem</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">Longões</div>
+
+                            <div class="col-span-3 border-t border-slate-800 p-2">21K</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">16</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">60 km/sem</div>
+                            <div class="col-span-3 border-t border-slate-800 p-2">Simulados</div>
+                        </div>
+                    </div>
+                    <p class="px-6 pb-6 text-xs text-slate-500">*Conteúdo ilustrativo. Cada planilha inclui fórmulas e
+                        campos editáveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos" class="py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto mb-10 max-w-3xl text-center">
+                <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-purple-400">Recursos principais</p>
+                <h2 class="text-3xl font-bold leading-tight sm:text-4xl">Tudo que você precisa para evoluir na corrida
+                </h2>
+                <p class="mt-3 text-base text-slate-300">Plano progressivo, controle de pace e visual simples para
+                    executar sem fricção em qualquer distância.</p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="card h-full rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div
+                        class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-600/10 text-xl">
+                        📅</div>
+                    <h3 class="text-lg font-semibold">Calendário Semanal</h3>
+                    <p class="mt-1 text-sm text-slate-300">Dias de corrida, descanso e fortalecimento organizados.</p>
+                </div>
+                <div class="card h-full rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div
+                        class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-600/10 text-xl">
+                        🏁</div>
+                    <h3 class="text-lg font-semibold">Progressão Gradual</h3>
+                    <p class="mt-1 text-sm text-slate-300">Volume e intensidade sobem na medida certa para cada
+                        distância.</p>
+                </div>
+                <div class="card h-full rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div
+                        class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-600/10 text-xl">
+                        ⏱️</div>
+                    <h3 class="text-lg font-semibold">Controle de Pace</h3>
+                    <p class="mt-1 text-sm text-slate-300">Campos para pace-alvo e tempo estimado de prova.</p>
+                </div>
+                <div class="card h-full rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div
+                        class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-600/10 text-xl">
+                        🧩</div>
+                    <h3 class="text-lg font-semibold">Pronto p/ Sheets & Excel</h3>
+                    <p class="mt-1 text-sm text-slate-300">Abra, preencha e acompanhe sem complicação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Distâncias -->
+    <section id="distancias" class="bg-slate-900/50 py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto mb-10 max-w-3xl text-center">
+                <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-purple-400">Planilhas disponíveis
+                </p>
+                <h2 class="text-3xl font-bold leading-tight sm:text-4xl">Treinos para todas as distâncias</h2>
+                <p class="mt-3 text-base text-slate-300">Escolha a planilha ideal para seu objetivo atual.</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6 text-center">
+                    <div
+                        class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-600/10 text-xl mx-auto">
+                        5K</div>
+                    <h3 class="text-xl font-semibold">Iniciante a 5K</h3>
+                    <p class="mt-2 text-sm text-slate-300">8 semanas de treino</p>
+                    <p class="mt-2 text-sm text-slate-300">Volume máximo: 20km/sem</p>
+                    <p class="mt-2 text-sm text-slate-300">Foco: resistência básica</p>
+                    <a href="#preco"
+                        class="ring-focus mt-4 inline-flex w-full justify-center rounded-xl bg-purple-600/20 px-4 py-2 text-sm font-medium text-purple-300 hover:bg-purple-600/30">Saiba
+                        mais</a>
+                </div>
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6 text-center">
+                    <div
+                        class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-600/10 text-xl mx-auto">
+                        10K</div>
+                    <h3 class="text-xl font-semibold">5K a 10K</h3>
+                    <p class="mt-2 text-sm text-slate-300">10 semanas de treino</p>
+                    <p class="mt-2 text-sm text-slate-300">Volume máximo: 35km/sem</p>
+                    <p class="mt-2 text-sm text-slate-300">Foco: ritmo constante</p>
+                    <a href="#preco"
+                        class="ring-focus mt-4 inline-flex w-full justify-center rounded-xl bg-purple-600/20 px-4 py-2 text-sm font-medium text-purple-300 hover:bg-purple-600/30">Saiba
+                        mais</a>
+                </div>
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6 text-center">
+                    <div
+                        class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-600/10 text-xl mx-auto">
+                        15K</div>
+                    <h3 class="text-xl font-semibold">10K a 15K</h3>
+                    <p class="mt-2 text-sm text-slate-300">12 semanas de treino</p>
+                    <p class="mt-2 text-sm text-slate-300">Volume máximo: 45km/sem</p>
+                    <p class="mt-2 text-sm text-slate-300">Foco: endurance</p>
+                    <a href="#preco"
+                        class="ring-focus mt-4 inline-flex w-full justify-center rounded-xl bg-purple-600/20 px-4 py-2 text-sm font-medium text-purple-300 hover:bg-purple-600/30">Saiba
+                        mais</a>
+                </div>
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6 text-center">
+                    <div
+                        class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-600/10 text-xl mx-auto">
+                        21K</div>
+                    <h3 class="text-xl font-semibold">15K a 21K</h3>
+                    <p class="mt-2 text-sm text-slate-300">16 semanas de treino</p>
+                    <p class="mt-2 text-sm text-slate-300">Volume máximo: 60km/sem</p>
+                    <p class="mt-2 text-sm text-slate-300">Foco: meia maratona</p>
+                    <a href="#preco"
+                        class="ring-focus mt-4 inline-flex w-full justify-center rounded-xl bg-purple-600/20 px-4 py-2 text-sm font-medium text-purple-300 hover:bg-purple-600/30">Saiba
+                        mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="como" class="py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto mb-10 max-w-3xl text-center">
+                <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-purple-400">Como funciona</p>
+                <h2 class="text-3xl font-bold leading-tight sm:text-4xl">3 passos simples para começar</h2>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3">
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-2xl bg-purple-600/10 text-sm font-bold text-purple-300">
+                        1</div>
+                    <h3 class="mt-2 text-xl font-semibold">Escolha sua distância</h3>
+                    <p class="text-slate-300">Selecione a planilha ideal para seu objetivo atual (5K, 10K, 15K ou 21K).
+                    </p>
+                </div>
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-2xl bg-purple-600/10 text-sm font-bold text-purple-300">
+                        2</div>
+                    <h3 class="mt-2 text-xl font-semibold">Personalize seu plano</h3>
+                    <p class="text-slate-300">Preencha seu pace atual, dias disponíveis e objetivo no arquivo.</p>
+                </div>
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-2xl bg-purple-600/10 text-sm font-bold text-purple-300">
+                        3</div>
+                    <h3 class="mt-2 text-xl font-semibold">Execute e evolua</h3>
+                    <p class="text-slate-300">Siga os treinos, marque seu progresso e ajuste conforme necessário.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta / Preço -->
+    <section id="preco" class="py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto mb-10 max-w-3xl text-center">
+                <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-purple-400">Ofertas especiais</p>
+                <h2 class="text-3xl font-bold leading-tight sm:text-4xl">Escolha o melhor pacote para você</h2>
+                <p class="mt-3 text-base text-slate-300">Planilhas individuais ou pacote completo com desconto.</p>
+            </div>
+
+            <div class="grid gap-6 lg:grid-cols-3">
+                <!-- Plano Individual -->
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <h3 class="text-xl font-bold">Planilha Individual</h3>
+                    <p class="mt-1 text-sm text-slate-300">Escolha uma distância (5K, 10K, 15K ou 21K)</p>
+                    <div class="mt-4 text-3xl font-extrabold text-purple-400">R$19,99</div>
+                    <div class="mt-1 text-sm text-slate-300">Pagamento único. Acesso vitalício.</div>
+                    <ul class="mt-4 space-y-3 text-sm text-slate-200">
+                        <li class="flex items-start gap-2">✅ <span>1 planilha da distância escolhida</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Tutorial de uso</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Atualizações gratuitas</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Suporte por e-mail</span></li>
+                    </ul>
+                    <a href="https://pay.hotmart.com/O101143210S?bid=1755261688627"
+                        class="ring-focus mt-6 inline-flex w-full items-center justify-center rounded-2xl bg-purple-600 px-6 py-3 text-sm font-semibold text-slate-100 hover:bg-purple-500">Comprar
+                        planilha única</a>
+                </div>
+
+                <!-- Pacote Completo (Destaque) -->
+                <div class="card relative rounded-2xl border-2 border-purple-600 bg-slate-900 p-6">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+                        <span
+                            class="inline-flex items-center rounded-full bg-purple-600 px-3 py-1 text-xs font-semibold text-white">MAIS
+                            VENDIDO</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Pacote Completo</h3>
+                    <p class="mt-1 text-sm text-slate-300">Todas as distâncias (5K, 10K, 15K e 21K)</p>
+                    <div class="mt-4 text-3xl font-extrabold text-purple-400">R$59,99</div>
+                    <div class="mt-1 text-sm text-slate-300"><span class="line-through text-slate-500">R$79,96</span>
+                        <span class="text-purple-300">(25% OFF)</span></div>
+                    <ul class="mt-4 space-y-3 text-sm text-slate-200">
+                        <li class="flex items-start gap-2">✅ <span>4 planilhas completas</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Guia de progressão entre distâncias</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Atualizações gratuitas para todas</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Suporte prioritário</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Bônus: planilha de fortalecimento</span></li>
+                    </ul>
+                    <a href="LINK_DO_PACOTE_COMPLETO"
+                        class="ring-focus mt-6 inline-flex w-full items-center justify-center rounded-2xl bg-purple-600 px-6 py-3 text-sm font-semibold text-slate-100 hover:bg-purple-500">Comprar
+                        pacote completo</a>
+                </div>
+
+                <!-- Plano Avançado -->
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <h3 class="text-xl font-bold">Planilha + Acompanhamento</h3>
+                    <p class="mt-1 text-sm text-slate-300">Planilha + 1 mês de suporte personalizado</p>
+                    <div class="mt-4 text-3xl font-extrabold text-purple-400">R$99,99</div>
+                    <div class="mt-1 text-sm text-slate-300">Para quem quer resultados mais rápidos</div>
+                    <ul class="mt-4 space-y-3 text-sm text-slate-200">
+                        <li class="flex items-start gap-2">✅ <span>1 planilha da distância escolhida</span></li>
+                        <li class="flex items-start gap-2">✅ <span>4 semanas de acompanhamento</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Ajustes personalizados na planilha</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Análise de desempenho semanal</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Suporte via WhatsApp</span></li>
+                    </ul>
+                    <a href="LINK_DO_PLANO_AVANCADO"
+                        class="ring-focus mt-6 inline-flex w-full items-center justify-center rounded-2xl bg-purple-600 px-6 py-3 text-sm font-semibold text-slate-100 hover:bg-purple-500">Quero
+                        acompanhamento</a>
+                </div>
+            </div>
+
+            <p class="mt-6 text-center text-sm text-slate-400">7 dias de garantia em todos os planos. Não gostou?
+                Devolvemos seu dinheiro.</p>
+        </div>
+    </section>
+
+    <!-- Prova social -->
+    <section class="bg-slate-900/50 py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto mb-10 max-w-3xl text-center">
+                <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-purple-400">Resultados</p>
+                <h2 class="text-3xl font-bold leading-tight sm:text-4xl">O que nossos corredores dizem</h2>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3">
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div class="mb-3 flex items-center gap-2">
+                        <div
+                            class="flex h-9 w-9 items-center justify-center rounded-full bg-purple-600/10 text-sm font-bold text-purple-300">
+                            CM</div>
+                        <div>
+                            <div class="text-base font-semibold">Carlos M.</div>
+                            <div class="text-xs text-purple-300">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-300">"Saí do sedentarismo e corri meus primeiros 5k em 7 semanas com a
+                        planilha. Agora estou partindo para os 10K!"</p>
+                </div>
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div class="mb-3 flex items-center gap-2">
+                        <div
+                            class="flex h-9 w-9 items-center justify-center rounded-full bg-purple-600/10 text-sm font-bold text-purple-300">
+                            LS</div>
+                        <div>
+                            <div class="text-base font-semibold">Larissa S.</div>
+                            <div class="text-xs text-purple-300">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-300">"Comprei o pacote completo e valeu cada centavo. Já fiz meu
+                        primeiro 21K seguindo a planilha à risca."</p>
+                </div>
+                <div class="card rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                    <div class="mb-3 flex items-center gap-2">
+                        <div
+                            class="flex h-9 w-9 items-center justify-center rounded-full bg-purple-600/10 text-sm font-bold text-purple-300">
+                            PR</div>
+                        <div>
+                            <div class="text-base font-semibold">Paulo R.</div>
+                            <div class="text-xs text-purple-300">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-300">"O acompanhamento personalizado fez toda diferença. Melhorei meu
+                        pace em 1:30/km nos 10K."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 sm:py-24">
+        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto mb-10 max-w-2xl text-center">
+                <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-purple-400">FAQ</p>
+                <h2 class="text-3xl font-bold">Perguntas frequentes</h2>
+            </div>
+            <div class="space-y-3" id="accordion">
+                <details class="group rounded-2xl border border-slate-800 bg-slate-900 p-5">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-base font-semibold">
+                        <span>Posso comprar mais de uma planilha?</span>
+                        <span class="ml-4 text-slate-400 transition group-open:rotate-180">⌄</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-slate-300">Sim! Você pode comprar planilhas individuais ou o pacote
+                        completo com todas as distâncias com 25% de desconto.</p>
+                </details>
+                <details class="group rounded-2xl border border-slate-800 bg-slate-900 p-5">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-base font-semibold">
+                        <span>Qual a diferença entre as planilhas?</span>
+                        <span class="ml-4 text-slate-400 transition group-open:rotate-180">⌄</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-slate-300">Cada planilha é adaptada para a distância específica, com
+                        volume, intensidade e tipos de treino adequados. A de 5K é mais básica, enquanto a de 21K inclui
+                        longões mais extensos e trabalhos de ritmo específicos.</p>
+                </details>
+                <details class="group rounded-2xl border border-slate-800 bg-slate-900 p-5">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-base font-semibold">
+                        <span>Como recebo após a compra?</span>
+                        <span class="ml-4 text-slate-400 transition group-open:rotate-180">⌄</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-slate-300">Acesso imediato por e-mail com links para download e vídeo
+                        tutorial de como usar cada planilha.</p>
+                </details>
+                <details class="group rounded-2xl border border-slate-800 bg-slate-900 p-5">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-base font-semibold">
+                        <span>Posso migrar de uma distância para outra?</span>
+                        <span class="ml-4 text-slate-400 transition group-open:rotate-180">⌄</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-slate-300">Sim! Recomendamos completar pelo menos 80% de uma planilha
+                        antes de migrar para a próxima distância. O pacote completo inclui um guia de transição entre
+                        distâncias.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div
+                class="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 p-8 text-center sm:p-12">
+                <div
+                    class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-tr from-purple-500/5 via-transparent to-purple-500/5">
+                </div>
+                <h3 class="text-2xl font-bold sm:text-3xl">Pronto para evoluir na corrida?</h3>
+                <p class="mx-auto mt-2 max-w-2xl text-sm text-slate-300">Escolha sua distância ou leve o pacote completo
+                    com todas as planilhas.</p>
+                <div class="mt-6 flex justify-center">
+                    <a href="#preco"
+                        class="ring-focus inline-flex items-center justify-center rounded-2xl bg-purple-600 px-6 py-3 text-base font-semibold text-slate-100 hover:bg-purple-500">Quero
+                        minha planilha agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-sm text-slate-400">
+        <div
+            class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 sm:flex-row sm:px-6 lg:px-8">
+            <p>© <span id="year"></span> Ton Trainer. Todos os direitos reservados.</p>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-slate-200">Termos</a>
+                <
